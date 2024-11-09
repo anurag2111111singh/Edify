@@ -1,0 +1,109 @@
+.ListPage {
+    margin: auto 0;
+    padding: 0px 70px 50px 70px;
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+}
+
+.ListPage h1 {
+    color: var(--primary-text);
+    margin: 20px 0;
+}
+
+.ListPage .videos {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+@media (max-width: 1179px) {
+    .ListPage .videos {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .ListPage {
+        margin: auto 0;
+        padding: 0px 25px 50px 25px;
+    
+    }
+    .ListPage .videos .video-card .videoName{
+       font-size: 1.4vw;
+    }
+     .ListPage .videos .video-card .video-button p{
+         padding: 0.5vw 0.7vw;
+     }
+}
+
+@media (max-width: 768px) {
+    .ListPage .videos {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+           .ListPage .videos .video-card .videoName {
+               font-size: 2.2vw;
+    
+           }
+   .ListPage {
+       margin: auto 0;
+       padding: 0px 20px 50px 20px;
+
+   }
+   .ListPage .videos .video-card .video-button p {
+       font-size: 2vw;
+       padding: 0.5vw 0.7vw;
+   }
+}
+
+@media (max-width: 500px) {
+    .ListPage .videos {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+   .ListPage .videos .video-card .videoName{
+    font-size: 5vw;
+
+   }
+   .ListPage {
+       margin: auto 0;
+       padding: 0px 20px 50px 20px;
+
+   }
+
+.ListPage .videos .video-card .video-button p{
+    font-size: 3vw;
+    padding: 1.5vw 2vw;
+}
+
+}
+
+.ListPage .videos .video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.ListPage .videos .video-card img {
+    width: 100%;
+    /* border-radius: 20px; */
+}
+
+.ListPage .videos .video-card h3 {
+    margin-top: 10px;
+    font-size: 1vw;
+    display: flex;
+    text-align: left;
+    color: var(--primary-text);
+}
+
+.ListPage .videos .video-card .video-button {
+    margin-top: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.6vw 0.8vw;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 600;
+}
+

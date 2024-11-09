@@ -1,0 +1,56 @@
+.addData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    flex-direction: column;
+}
+
+.add-data-container {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 40vw;
+    /* margin: 0 auto; */
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-bg);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: var(--gradient-green2);
+    color: var(--secondary-text);
+    border: none;
+    padding: 10px 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--gradient-green1);
+}
+
+
+
+.form-group .react-select__option {
+    color: #008f51;
+    /* Change the color to your desired color */
+}

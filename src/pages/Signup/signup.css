@@ -1,0 +1,124 @@
+/* SignupForm.css */
+.signupPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.signupPage-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-bg);
+    border-radius: 35% 0 0 18%;
+    color: #fff;
+}
+
+.signupPage-right h1 {
+    font-size: 2.5rem;
+}
+
+.signupPage-right h3 {
+    font-size: 1.3rem;
+    width: 70%;
+    font-weight: 450;
+    margin: 5px;
+
+}
+
+.signupPage-right button {
+    margin: 15px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 8px 20px;
+    color: #Fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.signupPage-left {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.signupPage-left h2 {
+    font-size: 2.2rem;
+    color: var(--button-bg);
+    margin-bottom: 10px;
+}
+
+.signupPage-left .inputfield {
+    border: none;
+    background-color: var(--input-light);
+    padding: 8px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 7px;
+    width: 30vw;
+    color: var(--primary-text);
+}
+
+.signupPage-left p {
+    color: grey;
+}
+
+.button-label {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid var(--button-bg);
+    color: #fff;
+    cursor: pointer;
+    color: var(--button-bg);
+    width: 14vw;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+.button-label:hover {
+    background-color: var(--button-bg);
+    color: #fff;
+}
+
+/* Style for active button */
+.button-label.active {
+    background-color: var(--button-bg);
+    color: #fff;
+}
+
+.errormessage {
+    margin-top: 10px;
+}
+
+.submitbtn {
+    border: none;
+    background-color: var(--button-bg);
+    color: #Fff;
+    padding: 10px;
+    width: 17vw;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.btnLoading {
+    border: none;
+    /* background-color: var(--button-bg); */
+    color: #Fff;
+    padding: 10px;
+    width: 17vw;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: var(--input-light);
+}

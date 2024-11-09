@@ -1,0 +1,28 @@
+ .dropdown-body {
+     position: absolute;
+     top: 4.3rem;
+     right: 4rem;
+     width: 100px;
+     padding: 10px 15px 10px 5px;
+     border-radius: 4px;
+     background-color: var(--secondary-text);
+     border: 1px solid var(--primary-text);
+ }
+
+ .dropdown-body::before {
+     position: absolute;
+     right: 1rem;
+     content: "";
+     top: -0.8rem;
+     width: 25px;
+     height: 25px;
+     background-color: var(--secondary-text);
+     border-left: 1px solid var(--primary-text);
+     border-top: 1px solid var(--primary-text);
+     transform: rotate(45deg);
+ }
+
+ .dropdown-li {
+     list-style: none;
+     color: var(--primary-text);
+ }

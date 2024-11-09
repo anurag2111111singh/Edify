@@ -1,0 +1,123 @@
+.get-hired {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow-y: auto;
+    max-height: 95vh;
+}
+
+.job {
+    width: 42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.job .job-top{
+     display: flex;
+     flex-direction: row;
+     text-align: left;
+    align-items: flex-start;
+}
+.job .job-top .job-img{
+    background-color: var(--light-bg);
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.job .job-top .job-img img{
+    height: 40px;
+    margin: 5px;
+}
+.job .job-top .job-name .tittle{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--primary-text);
+}
+.job .job-top .job-name  .location{
+    color: grey;
+    font-size: 0.9rem;
+}
+.job .job-mid{
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0 20px 0;
+}
+
+.job .job-mid .job-skills{
+    padding: 8px 10px;
+    background-color: var(--light-bg);
+    width: max-content;
+    margin: 0 20px 0 0;
+    border-radius: 38%;
+    font-size: 0.8rem;
+    color: var(--primary-text);
+}
+
+.job .job-below{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job .job-below .job-below-left{
+    display: flex;
+    flex-direction: row;
+}
+.job .job-below .job-below-left .job-detail{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    text-align: left;
+    color: var(--primary-text);
+}
+.job .job-below .job-below-left .job-detail .tittle{
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.job-below-right-button{
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px){
+    .job{
+        width: 88vw;
+    }
+}
+@media (max-width: 500px){
+        .job {
+                width: 92vw;
+            }
+    .job .job-below .job-below-left .job-detail{
+        margin-left: 10px;
+    }
+        .job-below-right-button{
+            font-size: 0.8rem;
+                font-weight: 700;
+                padding: 8px 10px;
+        }
+        .job .job-below .job-below-left .job-detail .tittle {
+            color: grey;
+            font-size: 0.9rem;
+        }
+}

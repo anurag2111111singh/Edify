@@ -1,0 +1,16 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    font-size: 1vw;
+    padding: 7px 0;
+    color: var(--secondary-text);
+}
+
+@media (max-width: 550px){
+    .banner{
+        font-size: 2vw;
+    padding: 10px 0;
+    }
+}

@@ -1,0 +1,215 @@
+.streamer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.video-player-left {
+    padding: 0 60px;
+    display: flex;
+    align-items: left;
+}
+
+.video-player-left iframe {
+    height: 30vw;
+    width: 56vw;
+}
+
+.video-player-right {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.suggestion-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-name .instructor-name {
+    font-size: 0.8vw;
+    margin-top: 5px;
+}
+
+
+.suggestion img {
+    width: 8vw;
+}
+
+.suggestion p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.video-player-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-name-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.video-name-button button {
+    padding: 4px 8px 4px 8px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-weight: 500;
+}
+
+.video-name-button h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.video-player-left p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.video-player-left span {
+    font-weight: 500;
+}
+
+.video-player-right .instructor-about {
+    text-align: left;
+}
+
+.video-player-right .instructor-about .about-name-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.video-player-right .instructor-about .about-name-image img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.video-player-right .suggested-videos {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.video-player-right .instructor-bio {
+    margin-top: 10px;
+    font-size: 0.8vw;
+}
+.video-player-right .suggested-videos .suggestion .video-image {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+@media (max-width: 1025px){
+    .streamer {
+            flex-direction: column;
+        }
+        .video-player-left {
+            padding: 0;
+            align-items: center;
+        }
+        .video-player-left iframe {
+            height: 45vw;
+            width: 84vw;
+        }
+        .video-name-button {
+            width: 84vw;
+        }
+        .video-name-button button{
+            display: none;
+        }
+
+        .video-player-right {
+            width: 84vw;
+            align-items: left;
+            padding: 0 7vw;
+        }
+        .video-name-button {
+            margin: 15px 0 0px 0;
+        }
+        .video-bottom-1{
+            margin-bottom: 10px;
+        }
+        .video-player-right .instructor-about{
+            width: 84vw;
+        }
+        .video-player-right .instructor-about .about-name-image p{
+            font-weight: 500;
+            font-size: 3vw;
+       }
+       .video-player-right .instructor-about p{
+        font-size: 2vw;
+       }
+       .video-player-right .instructor-about h3 {
+           display: none;
+       }
+
+        .video-player-right .suggested-videos{
+            width: 84vw;
+        }
+       .video-player-right .suggested-videos .suggestion .video-image img{
+        width: 14vw;
+        height: auto;
+        /* max-width: 100%; */
+       }
+       .suggestion-name .instructor-name {
+        font-size: 1.2vw;
+       }
+}
+
+@media (max-width: 500px){
+        .video-player-right .instructor-about p {
+                font-size: 3vw;
+            }
+        .video-player-right .instructor-about .about-name-image p {
+            font-weight: 500;
+            font-size: 4vw;
+        }
+        .video-player-right .suggested-videos .suggestion{
+            min-height: 15vw;
+        }
+        .video-player-right .suggested-videos .suggestion .video-image img {
+               width: 22vw;
+        }
+                           .suggestion-name .instructor-name {
+                               font-size: 2.7vw;
+                           }
+}
+
+@media (max-width: 450px){
+        .video-player-left iframe {
+            /* height: 45vw;
+                width: 84vw; */
+            height: 55vw;
+            width: 94vw;
+        }
+        .video-name-button {
+            width: 94vw;
+        }
+        .video-player-right {
+            width: 94vw;
+            padding: 0 4vw;
+        }
+        .video-player-right .instructor-about {
+            width: 94vw;
+        }
+        .video-player-right .suggested-videos {
+            width: 94vw;
+        }
+}
